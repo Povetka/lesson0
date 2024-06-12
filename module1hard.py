@@ -5,6 +5,6 @@ grades_1 = []
 for i in grades:
     grades_1.append(sum(i)/len(i))
 
-res = dict(zip(sort_students, grades_1))
-print(res)
+grade_book = dict(zip(sort_students, grades_1))
+print(grade_book)
 
