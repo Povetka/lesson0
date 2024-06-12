@@ -3,7 +3,7 @@ students = {'Johnny', 'Bilbo', 'Steve', 'Khendrik', 'Aaron'}
 sort_students = sorted(students)
 grades_1 = []
 for i in grades:
-    grades_1.append(sum(i)//len(i))
+    grades_1.append(sum(i)/len(i))
 
 res = dict(zip(sort_students, grades_1))
 print(res)
