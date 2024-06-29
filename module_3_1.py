@@ -15,7 +15,6 @@ def is_contains(string, list_to_search):
     count_calls()
     for i in list_to_search:
         if string.lower() in i.lower() or i.lower() in string.lower():
-            # уточнить, почему в строке выше ищем в i в нижнем регистре, а не в list_
             return True
         else:
             return False
