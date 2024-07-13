@@ -27,7 +27,7 @@ for i in range_2:
             continue
 
 
-print(''.join(map(str, second_stone)))
+print('Вторая каменная вставка:', ''.join(map(str, second_stone)))
 
 
 # само задание
