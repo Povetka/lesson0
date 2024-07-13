@@ -1,5 +1,3 @@
-from typing import List, Any
-
 data_structure = [
   [1, 2, 3],
   {'a': 4, 'b': 5},
