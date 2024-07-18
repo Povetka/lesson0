@@ -4,7 +4,7 @@ from module_5_1 import House
 # и импортировала его из модуля где он прописан.
 
 h1 = House('ЖК Эльбрус', 10)
-h2: House = House('ЖК Акация', 20)
+h2 = House('ЖК Акация', 20)
 
 print(h1)
 print(h2)
