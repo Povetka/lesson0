@@ -47,6 +47,9 @@ class House:
     def __radd__(self, value):
         return self.__add__(value)
 
+    def __iadd__(self, value):
+        return self.__add__(value)
+
 
 h1 = House('ЖК Горский', 18)
 h2 = House('Домик в деревне', 2)
