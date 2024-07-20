@@ -1,11 +1,5 @@
 class House:
 
-    houses_history = []
-
-    def __new__(cls, *args, **kwargs):
-        cls.houses_history.append(args[0])
-        return object.__new__(cls)
-
     def __init__(self, name, number_of_floors):
         self.name = name
         self.number_of_floors = number_of_floors
@@ -56,9 +50,6 @@ class House:
 
     def __iadd__(self, value):
         return self.__add__(value)
-
-    def __del__(self):
-        print(f'"{self.name} снесён, но он останется в истории"')
 
 
 if __name__ == '__main__':
