@@ -17,7 +17,8 @@ class Game(arcade.Window):
 
     def on_draw(self):
         self.clear((255, 255, 255))
-        self.bar.draw() # все повторила по видео пошагово
+        self.bar.draw() # застряла на 2 части практики
+        # все повторила по видео пошагово
         # но пишет: AttributeError: 'Bar' object has no attribute 'draw'
 
 
