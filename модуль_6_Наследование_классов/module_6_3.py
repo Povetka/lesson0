@@ -1,5 +1,5 @@
 class Horse():
-    def __init__(self):  # почему тут не надо добавлять x_distance и sound
+    def __init__(self):
         self.x_distance = 0
         self.sound = 'Frrr'
 
@@ -8,7 +8,7 @@ class Horse():
 
 
 class Eagle():
-    def __init__(self):  # а тут почему не надо добавлять y_distance и sound
+    def __init__(self):
         self.y_distance = 0
         self.sound = 'I train, eat, sleep, and repeat'
 
@@ -19,17 +19,17 @@ class Eagle():
 class Pegasus(Horse, Eagle):
 
     def __init__(self):
-        Horse.__init__(self)  # тут можно использовать super?
+        Horse.__init__(self)
         Eagle.__init__(self)
 
     def move(self, dx, dy):
         return super().run(dx), super().fly(dy)
 
     def get_pos(self):
-        return self.x_distance, self.y_distance  # не совсем поняла почему тут без доп отметок возвращается кортеж
+        return self.x_distance, self.y_distance
 
     def voice(self):
-        return print(self.sound)  # почему возвращаются звуки орла? Вроде первый в цепочке класс лошадей
+        return print(self.sound)
 
 
 p1 = Pegasus()
