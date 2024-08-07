@@ -2,7 +2,7 @@ class WordsFinder():
     def __init__(self, name, file_names, *args):
         file_names = []
 
-    def get_all_words(self): # начались тупняки и я оставила это задание.
+    def get_all_words(self): # начались тупняки и я оставила это задание, решила не мучить голову понапрасну
 
 
 
