@@ -22,3 +22,4 @@ print(dirs)
 # в результате вижу: 
 # ['module_7_1.py', 'module_7_2.py', 'module_7_3.py', 'module_7_4.py', 'module_7_5.py', 'products.txt', 'sample.txt', 'sample2.txt', 'test.txt', 'вебинар.py', 'лорпа.py', 'прост.txt']
 # ['module_7_1.py', 'module_7_2.py', 'module_7_3.py', 'module_7_4.py', 'module_7_5.py', 'products.txt', 'sample.txt', 'sample2.txt', 'test.txt', 'вебинар.py', 'лорпа.py', 'прост.txt']
+# результат совсем не разделен на файлы и директории
