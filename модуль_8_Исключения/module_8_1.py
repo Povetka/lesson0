@@ -5,10 +5,10 @@ def add_everything_up(a, b):
     """
     try:
         result_sum = a + b
-        return print(round(result_sum, 3))
+        return print('Результат сложения: ', round(result_sum, 3))
 
     except TypeError as exc:
-        print(f'{a}{b}')
+        print(f'Результат сложения: {a}{b}')
 
 
 add_everything_up(123.456, 'строка')
