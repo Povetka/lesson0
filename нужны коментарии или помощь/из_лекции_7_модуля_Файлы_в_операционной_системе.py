@@ -19,3 +19,6 @@ print(file)
 print(dirs)
 # https://urban-university.ru/members/courses/course999421818026/20231116-0000fajly-v-operacionnoj-sisteme-560779924863
 # примерно 8:40 время видео.
+# в результате вижу: 
+# ['module_7_1.py', 'module_7_2.py', 'module_7_3.py', 'module_7_4.py', 'module_7_5.py', 'products.txt', 'sample.txt', 'sample2.txt', 'test.txt', 'вебинар.py', 'лорпа.py', 'прост.txt']
+# ['module_7_1.py', 'module_7_2.py', 'module_7_3.py', 'module_7_4.py', 'module_7_5.py', 'products.txt', 'sample.txt', 'sample2.txt', 'test.txt', 'вебинар.py', 'лорпа.py', 'прост.txt']
