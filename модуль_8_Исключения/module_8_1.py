@@ -1,6 +1,7 @@
 def add_everything_up(a, b):
     """
-    складывает числа(int, float) и строки(str)
+    Эта функция настолько могучая, 
+    что складывает числа(int, float) и строки(str)
     """
     try:
         result_sum = a + b
