@@ -23,3 +23,9 @@ print(dirs)
 # ['module_7_1.py', 'module_7_2.py', 'module_7_3.py', 'module_7_4.py', 'module_7_5.py', 'products.txt', 'sample.txt', 'sample2.txt', 'test.txt', 'вебинар.py', 'лорпа.py', 'прост.txt']
 # ['module_7_1.py', 'module_7_2.py', 'module_7_3.py', 'module_7_4.py', 'module_7_5.py', 'products.txt', 'sample.txt', 'sample2.txt', 'test.txt', 'вебинар.py', 'лорпа.py', 'прост.txt']
 # результат совсем не разделен на файлы и директории
+
+os.system('pip install random2')
+
+# "pip" �� ���� ����७��� ��� ���譥�
+# ��������, �ᯮ��塞�� �ணࠬ��� ��� ������ 䠩���. 
+# вот еще странность. Нечитаемый результат после команды. У меня что то не так с пучарм?
