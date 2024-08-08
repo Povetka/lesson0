@@ -22,8 +22,14 @@ class Pegasus(Horse, Eagle):
         Horse.__init__(self)  # тут можно использовать super?
         Eagle.__init__(self)
 
+        # комент преподавателя при проверке:
+        # def move(self, dx, dy): - этот метод не должен ничего возвращать + можно обращаться через self
+        # было:
+    # def move(self, dx, dy):
+    #     return super().run(dx), super().fly(dy)
+        #     работать после исправления продолжило. Какой вариант лучше?
     def move(self, dx, dy):
-        return super().run(dx), super().fly(dy)
+        self.run(dx), self.fly(dy)
 
     def get_pos(self):
         return self.x_distance, self.y_distance  # не совсем поняла почему тут без доп отметок возвращается кортеж
