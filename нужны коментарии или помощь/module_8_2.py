@@ -14,7 +14,7 @@ def personal_sum(numbers):
 def calculate_average(numbers):
     arithmetic_mean = 0
     try:
-        calc = personal_sum(numbers) / len(numbers)
+        calc = personal_sum(numbers)[0] / len(numbers)
         arithmetic_mean += calc
 
     except ZeroDivisionError as exc:
