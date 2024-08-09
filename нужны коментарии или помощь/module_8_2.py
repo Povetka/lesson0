@@ -39,8 +39,8 @@ print('\nесли долго мучиться, что-нибудь получи�
 
 def len_num(numbers):
     try:
-        len_sum_list = [i for i in numbers if type(i) == int or type(i) == float]
-    except TypeError as exp:
+        len_sum_list = [i for i in numbers if type(i) == int or type(i) == float]  # честно говоря, не очень понимаю как работает эта строчка, 
+    except TypeError as exp:                                                       # я нагуглила похожую задачу и адаптировала под свой код.
         pass
     return len_sum_list
 
