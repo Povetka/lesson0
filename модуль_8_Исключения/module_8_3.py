@@ -17,7 +17,7 @@ class Car():
         if type(self.vin_number) == int and self.vin_number in range(1000000, 10000000):
             return True
 
-    def __is_valid_numbers(self, numbers):  # 'Некорректный тип данных для номеров'  'Неверная длина номера'
+    def __is_valid_numbers(self, numbers):
         self.numbers = numbers
         if type(self.numbers) != str:
             raise IncorrectCarNumbers('Некорректный тип данных для номеров')
@@ -57,7 +57,7 @@ except IncorrectCarNumbers as exc:
 else:
   print(f'{second.model} успешно создан')
 
-# try:                                             почему то текст первой и второй модели был продублирован
+# try:                                             почему то в дз текст первой и второй модели был продублирован
 #   first = Car('Model1', 1000000, 'f123dj')
 # except IncorrectVinNumber as exc:
 #   print(exc.message)
