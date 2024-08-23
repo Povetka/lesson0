@@ -17,13 +17,11 @@ class Iterator:
         return self
 
     def __next__(self):
-        if self.step < 0 and self.pointer <= self.stop:
-            raise StopIteration()
-        if self.step > 0 and self.pointer >= self.stop:
-            raise StopIteration()
-        else:
-            self.pointer += self.step
-        return self.pointer
+        if (self.step > 0 and self.pointer > self.stop) or (self.step < 0 and self.pointer < self.stop):
+            raise StopIteration
+        n = self.pointer
+        self.pointer += self.step
+        return n
 
 
 try:
@@ -40,17 +38,16 @@ iter5 = Iterator(10, 1)
 
 for i in iter2:
     print(i, end=' ')
-    print()
+print()
 for i in iter3:
     print(i, end=' ')
-    print()
+print()
 for i in iter4:
     print(i, end=' ')
-    print()
+print()
 for i in iter5:
     print(i, end=' ')
 
-# ответ пока не сходится
 
 # Домашнее задание по теме "Итераторы"
 # Если вы решали старую версию задачи, проверка будет производиться по ней.
