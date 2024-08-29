@@ -1,5 +1,3 @@
-# не понимаю как делать
-
 first = ['Strings', 'Student', 'Computers']
 second = ['Строка', 'Урбан', 'Компьютер']
 
