@@ -12,10 +12,10 @@ def write_words(word_count, file_name):
 
 time_start_func = time.time()
 
-func_call_1 = write_words(10, 'example1.txt')
-func_call_2 = write_words(30, 'example2.txt')
-func_call_3 = write_words(200, 'example3.txt')
-func_call_4 = write_words(100, 'example4.txt')
+write_words(10, 'example1.txt')
+write_words(30, 'example2.txt')
+write_words(200, 'example3.txt')
+write_words(100, 'example4.txt')
 
 time_stop_func = time.time()
 time_res_func = time_start_func - time_stop_func
