@@ -6,7 +6,7 @@ def read_info(name):
     all_data = []
     with open(name, 'r', encoding="utf-8") as file:
         for line in file:
-            all_data.append(line.strip())
+            all_data.append(line)
 
 
 filenames = [f'./file {number}.txt' for number in range(1, 5)]
