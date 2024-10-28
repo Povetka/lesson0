@@ -10,7 +10,8 @@ def read_info(name):
 
 
 filenames = [f'./file {number}.txt' for number in range(1, 5)]
-
+# Если делать вызов функции в многопоточном и линейном режиме после этой конструкции,
+# то они не мешают работе друг друга
 if __name__ == '__main__':
 
     start_linear = datetime.datetime.now()
