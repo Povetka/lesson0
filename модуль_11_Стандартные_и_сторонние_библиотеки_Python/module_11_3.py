@@ -2,38 +2,41 @@ import inspect
 from pprint import pprint
 
 
-def introspection_info(obj):
-    info = {}
+class IntrospectionInfo:
+    def __init__(self, obj):
+        self.obj = obj
+        self.info = {}
 
-    # Узнаем тип объекта
-    info['type'] = type(obj).__name__
+        # Узнаем тип объекта
+        self.info['type'] = type(self.obj).__name__
 
-    # узнаем атрибуты объекта
-    info['attributes'] = [attr for attr in dir(obj) if not callable(getattr(obj, attr))]
+        # узнаем атрибуты объекта
+        self.info['attributes'] = [attr for attr in dir(self.obj) if not callable(getattr(self.obj, attr))]
 
-    # Узнаем методы объекта
-    info['methods'] = [method for method in dir(obj) if callable(getattr(obj, method))]
+        # Узнаем методы объекта
+        self.info['methods'] = [method for method in dir(self.obj) if callable(getattr(self.obj, method))]
 
-    # Узнаем в каком модуле находится объект
-    module = inspect.getmodule(obj)
-    info['module'] = module.__name__ if module else None
+        # Узнаем в каком модуле находится объект
+        module = inspect.getmodule(self.obj)
+        self.info['module'] = module.__name__ if module else None
 
-    # Другие интересные свойства =)
-    if isinstance(obj, (int, float, str)):
-        info['value'] = obj
-    elif isinstance(obj, list):
-        info['length'] = len(obj)
-    elif isinstance(obj, dict):
-        info['keys'] = list(obj.keys())
-    elif hasattr(obj, 'shape'):
-        info['shape'] = obj.shape
+        # Другие интересные свойства =)
+        if isinstance(self.obj, (int, float, str)):
+            self.info['value'] = self.obj
+        elif isinstance(self.obj, list):
+            self.info['length'] = len(self.obj)
+        elif isinstance(self.obj, dict):
+            self.info['keys'] = list(self.obj.keys())
+        elif hasattr(self.obj, 'shape'):
+            self.info['shape'] = self.obj.shape
 
-    return info
+    def pprint_info(self):
+        pprint(self.info)
 
 
 # Пример работы:
-number_info = introspection_info(42)
-pprint(number_info)
+number_info = IntrospectionInfo(42)
+number_info.pprint_info()
 
 # Домашнее задание по теме "Интроспекция"
 # Цель задания:
