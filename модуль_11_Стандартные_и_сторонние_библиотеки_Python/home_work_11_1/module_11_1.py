@@ -25,8 +25,17 @@ def black_and_white(name_photo):
     image.save('drawing2.png')
 
 
+def change_format_JPG(name_photo):
+    """
+    Меняет формат изображение на JPG.
+    """
+    image = Image.open(name_photo)
+    image.save('drawing3.jpg')
+
+
 change_size('oduvanchik.jpg', 3, 3)
 black_and_white('oduvanchik.jpg')
+change_format_JPG('drawing1.png')
 
 # Домашнее задание по теме "Обзор сторонних библиотек Python"
 #
