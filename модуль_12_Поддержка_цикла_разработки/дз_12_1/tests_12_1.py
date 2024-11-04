@@ -25,6 +25,9 @@ class RunnerTest(unittest.TestCase):
         self.assertNotEqual(runner.distance, runner_2.distance)
 
 
+if __name__ == '__main__':
+    unittest.main()
+
 # Домашнее задание по теме "Простые Юнит-Тесты"
 # Если вы решали старую версию задачи, проверка будет производиться по ней.
 # Ссылка на старую версию тут.
