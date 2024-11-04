@@ -11,14 +11,3 @@ class Runner:
 
     def __str__(self):
         return self.name
-
-
-if __name__ == '__main__':
-    runner = Runner('John Doe')
-    print(runner)
-
-    runner.run()
-    print(f'{runner.name} ran {runner.distance} meters')
-
-    runner.walk()
-    print(f'{runner.name} walked {runner.distance} meters')
