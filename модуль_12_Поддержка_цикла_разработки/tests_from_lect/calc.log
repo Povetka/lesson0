@@ -1,7 +1,0 @@
-2024-11-04 22:33:32,328 | INFO | Деление прошло успешно 3 / 4
-2024-11-04 22:33:32,328 | ERROR | Ошибка деления: 3 / 0. На 0 делить нельзя.
-Traceback (most recent call last):
-  File "C:\Users\Василий\PycharmProjects\praktika_obychenie\модуль_12_Поддержка_цикла_разработки\calc_12_modul.py", line 18, in div
-    num1 / num2
-    ~~~~~^~~~~~
-ZeroDivisionError: division by zero
