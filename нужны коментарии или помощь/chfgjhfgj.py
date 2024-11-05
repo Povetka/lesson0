@@ -1,5 +1,5 @@
 import unittest
-from сложно.runner_and_tournament import Runner, Tournament
+from runner_and_tournament import Runner, Tournament
 
 
 class TournamentTest(unittest.TestCase):
