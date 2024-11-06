@@ -1,5 +1,3 @@
-# Вывод не соответствует. Вместо имен объекты. Уже повторила все с вебинара и у меня все равно объекты в выводе.
-
 import unittest
 from runner_and_tournament import Runner, Tournament
 
